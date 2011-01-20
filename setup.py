@@ -22,6 +22,11 @@ setup(name='fullhistory',
       author_email='zbyte64@gmail.com',
       url="http://code.google.com/p/fullhistory/",
       packages=find_packages(exclude=['ez_setup', 'examples', 'testproject', 'tests']),
+      package_data = {
+        'fullhistory': [
+            'templates/admin/*.html',
+            ],
+        },
       zip_safe=False,
       install_requires=[
         'django',
